@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        #middlebox{
+            border: 1px solid red;
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #middlebox>div{
+            border: 1px solid blue;
+        }
+        #middlebox>div>div{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="topbox">
+        <div>
+            <a href="./sample.html"><img src="../symbols/arrow_back_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
+        </div>
+        <div>
+           <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/images/growth/customer-subscription/1626353785493-75ebc7.png" alt="">
+           <h1>Save 50% on everyorder for just ₹99 extra </h1>
+        </div>
+        <div>
+            <div><h3>You will save ₹150 on this order</h3></div>
+            <div><h3>Get only top rated Plus professionals</h3></div>
+        </div>
+    </div>
+    <div id="middlebox">
+        <div>
+           <div>
+            <div>
+                <h2>100% money back guaranteed</h2>
+                <p>if you save less than the memberships price, we refund you a difference!</p>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/images/growth/customer-subscription/1634028128628-b047e3.png" alt="">
+            </div>
+           </div>
+           <div>
+            <h1>Estimated Savings</h1>
+            <h2 id="savingscost"></h2>
+            <p>No.of service / year</p>
+            <button id="two">2</button>
+            <button id="four">4</button>
+            <button id="six">6</button>
+            <button id="eight">8</button>
+            <button id="ten">10</button>
+            <button id="twelve">12</button>
+            <p>Subsribers placed 6 orders on average in your area</p>
+        </div>
+        </div>
+        <div>
+            <h2>Select your plan</h2>
+            <div>
+                <div>
+                    <p>BOUGHT 6 LAKH+ TIMES</p>
+                    <h2>12 months</h2>
+                    <p><ins>₹299</ins><del>₹999</del></p>
+                </div>
+                <button id="remove" class="removeadd">Remove</button>
+            </div>
+            <div>
+                <div>
+                    <h2>6 months</h2>
+                    <p><ins>₹249</ins><del>₹699</del></p>
+                </div>
+                <button id="add" class="removeadd">Add</button>
+            </div>
+            <div><h2>No, I dont want membership <img src="../symbols/arrow_forward_FILL0_wght400_GRAD0_opsz48.png" alt=""></h2></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="box"></div>
+</body>
+</html>
+<script src="./cartpage.js" type="module">
+
+
+ let arrow = document.getElementById("arrowimg")
+ arrow.addEventListener("click",returnfun)
+    function returnfun(){
+    window.location.href="sample.html"
+}
+
+
+
+</script>
