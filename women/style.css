@@ -1,3 +1,6 @@
+
+
+
 #id1{
     display: flex;
     gap: 50px;
@@ -7,9 +10,13 @@
     margin-left : 100px;
     margin-right : 100px;
 }
+#id4{
+    height: 100vh;
+    overflow: scroll;
+}
 #id1>div>h1{
     font-size: 36px;
-    font-weight: 700;
+    font-weight:1200;
     line-height: 48px;
     font-family: os_bold;
     -webkit-line-clamp: 2;
@@ -38,6 +45,7 @@
     margin: auto;
     margin-left: 280px;
     margin-top: 20px;
+   
     
     
 
@@ -108,7 +116,7 @@ img{
 #id6{
     border: 1px solid green;
     width: 25%;
-    height: 300rem;
+    height: 100vh;
 }
 #id4{
     width: 55%;
@@ -122,7 +130,19 @@ img{
 h1{
     margin: auto;
     margin-left: 220px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
     color: grey;
+}
+h2{
+    font-size: 20px;
+}
+h3,p{
+    color: rgb(79, 77, 77);
+}
+button{
+    margin-left: 20px;
+    border: 1px solid white;
+    color: blue;
+    font-weight: 800;
 }

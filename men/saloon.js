@@ -430,32 +430,32 @@ var data6 = [
         title:"Relaxing Head Massage",
         rating: "4.79/5(4.9k)",
          price: 99,
-        desc: "gives bouncy looking long last few hours",
-        image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650710728185-13cb5e.jpeg"
+        desc: "Promise to Give Relaxing Massage",
+        image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1651660884996-1c3ba4.png"
      },
      
      {
-         title:"Straightening",
+         title:"Neck & Sholder Massage",
          rating: "4.80/5(20k)",
-         price: 499,
-         desc: "long lastic sleek,smooth and straight hair",
-         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650712577621-7ce491.jpeg"
+         price: 199,
+         desc: "Promise to Give Relaxing Massage",
+         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1609925335989-eccf3c.jpeg"
       },
      
       {
-         title:"Curls & Waves ",
+         title:"Anti Dendruff - Head Massage",
          rating: "4.76/5(43.8k)",
          price: 449,
-         desc: "long lastic",
-         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650712585125-72cb41.jpeg"
+         desc: "Promise to Give Relaxing Massage",
+         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/home-screen/1631336215990-e722e8.jpeg"
       },
       
       {
-         title:"Weding reeady Group Styling Package ",
+         title:"Head,neck & Sholder Massage",
          rating: "4.89/5(13.8k)",
-         price: 1999,
-         desc: "Pakages At least 3 styling service",
-         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650635192529-1c7ebd.jpeg"
+         price: 499,
+         desc: "Promise to Give Relaxing Massage - 40 min",
+         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/categories/category_v2/category_f7d85a20.jpeg"
       },
    
 ]
@@ -519,15 +519,26 @@ let Baddele = (el)=>{
 var data7 = [
 
    {
-      title:"ragular hair trim",
+      title:"Deep Cleansee Pedicure",
+      rating: "4.75/5(64.8k)",
+      price: 749,
+      desc: "Promise Hygiene Mantain",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/home-screen/1631931646822-21bf6f.jpeg"
+   },
+   {
+      title:"Express Pedicure",
+      rating: "4.75/5(64.8k)",
+      price: 499,
+      desc: "Promise Hygiene Mantain",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/home-screen/1635509939358-77d147.jpeg"
+   },
+   {
+      title:"Experess Manicure",
       rating: "4.75/5(64.8k)",
       price: 899,
-      desc: "Relaxing oil massage & nourised hair",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650711648402-3502ab.jpeg"
+      desc: "Promise Hygiene Mantain",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/categories/category_v2/category_d3262550.png"
    },
-   
-  
-   
 ]
 
 
@@ -578,7 +589,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 
 
 let haddffun = ()=>{
-   window.location.href = "./detailsHair.html"
+   window.location.href = "./detailsMensaloon.html"
 }
 let haddele = (el)=>{
   // console.log(el)
