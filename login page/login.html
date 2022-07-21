@@ -193,7 +193,7 @@
             <div><img src="./india.png" width="32px" height="32px"><p>+91</p> <div id="down-arrw"></div></div>
             <input type="number" placeholder="Your phone number" id="mob_no" required>
         </div>
-        <div id="btn-cntnu" onclick="toggleOTP()">
+        <div id="btn-cntnu" onclick="loginContinue()">
             Continue
         </div>
     </div>
@@ -247,6 +247,7 @@
         let a=check();
         if(a){
             alert("Please check your phone for OTP.");
+            toggleOTP();
         }else{
             alert("please enter correct number")
         }
