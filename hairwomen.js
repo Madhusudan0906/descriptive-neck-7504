@@ -1,76 +1,30 @@
 var data = [
     
     {
-   title:"Roll-on special (full arms + full lgs + underarms )",
-   rating: "4.81/5(2.8k)",
-    price: 849,
-   desc: "we use RICA peet-off for underarms waxing",
-   image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100975526-deeb14.png"
+   title:"Hair Cut and Basic",
+   rating: "4.81/5(74.8k)",
+    price: 649,
+   desc: "Choose from a renge of haircut and layers,bangs.....",
+   image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650711648402-3502ab.jpeg"
 },
 
 {
-    title:"Full arms + underarms ",
-    rating: "4.70/5(30k)",
-    price: 309,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100969960-ef6f74.png"
+    title:"Girls Haircut ",
+    rating: "4.70/5(3.0k)",
+    price: 649,
+    desc: "Choose from a renge of haircut and layers,bangs.....",
+    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1644151475715-26a85e.jpeg"
  },
 
  {
-    title:"Full legs ",
-    rating: "4.78/5(23.8k)",
-    price: 349,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100965594-2ddc55.png"
+    title:"Mom and Daughter Pack",
+    rating: "4.78/5(2.8k)",
+    price: 1049,
+    desc: "Choose from a renge of haircut and layers,bangs.....",
+    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1637643281048-3b4e78.png"
  },
  
- {
-    title:"Full body",
-    rating: "4.81/5(4.8k)",
-    price: 1399,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100967218-f08380.png"
- },
- 
- {
-    title:"Stomach",
-    rating: "4.71/5(3.8k)",
-    price: 299,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100955968-c5b3f1.png"
- },
- 
- {
-    title:"Back",
-    rating: "4.71/5(3.8k)",
-    price: 449,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100988948-0b5dcc.png"
- },
- 
- {
-    title:"Underarms",
-    rating: "4.41/5(3.9k)",
-    price: 449,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655288839372-c90f8e.png"
- },
- 
- {
-    title:"Bikini",
-    rating: "4.81/5(6.8k)",
-    price: 949,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657100982244-701c4a.png"
- },
- 
- {
-    title:"Bikini line",
-    rating: "4.91/5(30.8k)",
-    price: 249,
-    desc: "we use RICA peet-off for underarms waxing",
-    image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1655288871618-0d6809.png"
- },
+
 
 ]
 var slonArr = []
@@ -119,7 +73,7 @@ div2.append(h2,h4,h3,div3,p,btn1,btn2)
 }
 
 let addFun = ()=>{
-    window.location.href = "./details.html"
+    window.location.href = "./detailsHair.html"
 }
 let addEle = (el)=>{
    // console.log(el)
@@ -133,35 +87,35 @@ let addEle = (el)=>{
 
 var data1 = [
    {
-      title:"Cleanup",
-      rating: "4.79/5(49.8k)",
-       price: 699,
-      desc: "6 step process , including 20-min massage",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1634212386258-a7bdfd.png"
+      title:"Blowdry: In Curl / Out Curl",
+      rating: "4.79/5(4.9k)",
+       price: 399,
+      desc: "gives bouncy looking long last few hours",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650710728185-13cb5e.jpeg"
    },
    
    {
-       title:"Classical Facial",
+       title:"Straightening",
        rating: "4.80/5(20k)",
-       price: 1099,
-       desc: "6 step process , including 20-min massage",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1634707058605-fd6260.png"
+       price: 499,
+       desc: "long lastic sleek,smooth and straight hair",
+       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650712577621-7ce491.jpeg"
     },
    
     {
-       title:"Signature Facial ",
+       title:"Curls & Waves ",
        rating: "4.76/5(43.8k)",
-       price: 349,
-       desc: "6 step process , including 20-min massage",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1634714666502-19511c.png"
+       price: 449,
+       desc: "long lastic",
+       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650712585125-72cb41.jpeg"
     },
     
     {
-       title:"speciallised facial",
+       title:"Weding reeady Group Styling Package ",
        rating: "4.89/5(13.8k)",
-       price: 1399,
-       desc: "6 step process , including 20-min massage",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/supply/customer-app-supply/1634707052569-4bc6a6.png"
+       price: 1999,
+       desc: "Pakages At least 3 styling service",
+       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650635192529-1c7ebd.jpeg"
     },
     
 
@@ -213,7 +167,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 }
 
 // let addFun = ()=>{
-//    window.location.href = "./details.html"
+//    window.location.href = "./detailsHair.html"
 // }
 // let addEle = (el)=>{
 //   // console.log(el)
@@ -222,7 +176,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 // }
 
 let addfun = ()=>{
-   window.location.href = "./details.html"
+   window.location.href = "./detailsHair.html"
 }
 let addle = (el)=>{
   // console.log(el)
@@ -233,36 +187,22 @@ let addle = (el)=>{
 
 var data2 =  [
    {
-      title:"Cut,file & polish (hands)",
+      title:"Roots : Only Application",
       rating: "4.59/5(49.8k)",
-       price: 199,
-      desc: "Quick & basic grooming session with a wide range of nail hands",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657015111280-ecba9e.png"
+       price: 399,
+      desc: "Up to 4 inches coverage from root",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1637646873120-9c2c72.png"
    },
    
    {
-       title:"Elysian British rose manicure",
+       title:"Roots : color And Application",
        rating: "4.71/5(19k)",
-       price: 649,
-       desc: "Quick & basic grooming session with a wide range of nail hands",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657525354775-6f2f1b.png"
+       price: 849,
+       desc: "Any color which you selected",
+       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1639397627725-b8ee0b.png"
     },
    
-    {
-       title:"Elysian chocolate & vanila manicure",
-       rating: "4.71/5(33.8k)",
-       price: 899,
-       desc: "Quick & basic grooming session with a wide range of nail hands",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657525353944-8baf5e.png"
-    },
     
-    {
-       title:"Elysian candle spa manicure",
-       rating: "4.89/5(13.8k)",
-       price: 1049,
-       desc: "Quick & basic grooming session with a wide range of nail hands",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657015100590-b7efec.png"
-    },
     
 
 ]
@@ -313,7 +253,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 }
 
 // let addFun = ()=>{
-//    window.location.href = "./details.html"
+//    window.location.href = "./detailsHair.html"
 // }
 // let addEle = (el)=>{
 //   // console.log(el)
@@ -322,7 +262,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 // }
 
 let addffun = ()=>{
-   window.location.href = "./details.html"
+   window.location.href = "./detailsHair.html"
 }
 let addele = (el)=>{
   // console.log(el)
@@ -332,36 +272,21 @@ let addele = (el)=>{
 
 var data3 =  [
    {
-      title:"Cut,file & polish (feet)",
+      title:"L'Oreal Nourishing Hair Spa",
       rating: "4.59/5(49.8k)",
-       price: 199,
-      desc: "Quick & basic grooming session with a wide range of nail hands",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657018447765-ef2c1f.png"
+       price: 1399,
+      desc: "Provided maximum Nurisument for Gorgeous bouncy hair",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1639396832039-ac31ba.png"
    },
    
    {
-       title:"Elysian British rose manicure",
+       title:"Relaxing Head Oil Massage",
        rating: "4.71/5(19k)",
-       price: 649,
-       desc: "Quick & basic grooming session with a wide range of nail hands",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657525547069-568a1f.png"
+       price: 349,
+       desc: "Provided maximum Nurisument for Gorgeous bouncy hair",
+       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1639397192787-73f069.png"
     },
    
-    {
-       title:"Elysian chocolate & vanila manicure",
-       rating: "4.71/5(33.8k)",
-       price: 899,
-       desc: "Quick & basic grooming session with a wide range of nail hands",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657525546356-075510.png"
-    },
-    
-    {
-       title:"Elysian candle spa manicure",
-       rating: "4.89/5(13.8k)",
-       price: 1049,
-       desc: "Quick & basic grooming session with a wide range of nail hands",
-       image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657525546690-54cb72.png"
-    },
     
 
 ]
@@ -413,7 +338,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 
 
 let Paddffun = ()=>{
-   window.location.href = "./details.html"
+   window.location.href = "./detailsHair.html"
 }
 let Paddele = (el)=>{
   // console.log(el)
@@ -425,19 +350,19 @@ let Paddele = (el)=>{
 var data5 = [
 
    {
-      title:"Face wash",
+      title:"L'Oreal Signature Highlights/Streaks",
       rating: "4.76/5(33.8k)",
-      price: 69,
-      desc: "RICA peel-off wax to remove even the tiniest and good quality services",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657523964352-5dd593.png"
+      price: 3149,
+      desc: "Provided maximum Nurisument for Gorgeous bouncy hair",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1639398010862-53633e.png"
    },
    
    {
-      title:"Threadingn",
+      title:"Balayage / Ombre",
       rating: "4.89/5(510k)",
-      price: 19,
-      desc: "RICA peel-off wax to remove even the tiniest and good quality services",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657524490060-23016c.png"
+      price: 3449,
+      desc: "Provided maximum Nurisument for Gorgeous bouncy hair",
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1639398073123-02f47c.png"
    },
    
 ]
@@ -488,7 +413,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 
 
 let Taddffun = ()=>{
-   window.location.href = "./details.html"
+   window.location.href = "./detailsHair.html"
 }
 let Taddele = (el)=>{
   // console.log(el)
@@ -499,21 +424,37 @@ let Taddele = (el)=>{
 
 var data6 = [
 
-   {
-      title:"Bleach",
-      rating: "4.75/5(54.8k)",
-      price: 299,
-      desc: "Not suitable for sensetive skin",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657520810954-691bb1.png"
-   },
-   
-   {
-      title:"Detan",
-      rating: "4.79/5(80k)",
-      price: 349,
-      desc: "Not suitable for sensetive skin",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657523167667-d1f1eb.png"
-   },
+    {
+        title:"Blowdry: In Curl / Out Curl",
+        rating: "4.79/5(4.9k)",
+         price: 399,
+        desc: "gives bouncy looking long last few hours",
+        image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650710728185-13cb5e.jpeg"
+     },
+     
+     {
+         title:"Straightening",
+         rating: "4.80/5(20k)",
+         price: 499,
+         desc: "long lastic sleek,smooth and straight hair",
+         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650712577621-7ce491.jpeg"
+      },
+     
+      {
+         title:"Curls & Waves ",
+         rating: "4.76/5(43.8k)",
+         price: 449,
+         desc: "long lastic",
+         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650712585125-72cb41.jpeg"
+      },
+      
+      {
+         title:"Weding reeady Group Styling Package ",
+         rating: "4.89/5(13.8k)",
+         price: 1999,
+         desc: "Pakages At least 3 styling service",
+         image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650635192529-1c7ebd.jpeg"
+      },
    
 ]
 
@@ -564,7 +505,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 
 
 let Baddffun = ()=>{
-   window.location.href = "./details.html"
+   window.location.href = "./detailsHair.html"
 }
 let Baddele = (el)=>{
   // console.log(el)
@@ -576,20 +517,14 @@ let Baddele = (el)=>{
 var data7 = [
 
    {
-      title:"Head Massage",
+      title:"ragular hair trim",
       rating: "4.75/5(64.8k)",
-      price: 299,
+      price: 899,
       desc: "Relaxing oil massage & nourised hair",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657524725157-0eea37.png"
+      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1650711648402-3502ab.jpeg"
    },
    
-   {
-      title:"Loreal Hair Spa",
-      rating: "4.63/5(1.1k)",
-      price: 1249,
-      desc: "Relaxing oil massage & nourised hair",
-      image: "https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/images/growth/luminosity/1657524725660-93d095.png"
-   },
+  
    
 ]
 
@@ -641,7 +576,7 @@ div4.append(h2,h4,h3,div5,p,btn1,btn2)
 
 
 let haddffun = ()=>{
-   window.location.href = "./details.html"
+   window.location.href = "./detailsHair.html"
 }
 let haddele = (el)=>{
   // console.log(el)

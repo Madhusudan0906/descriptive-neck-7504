@@ -14,11 +14,20 @@
     justify-content: center;
     margin-top: 100px;
     margin-left: 150px;
+    color: black;
 }
 #video1{
     width: 700px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 10px;
     
+}
+#section1>div>div~img{
+    margin-top: 50px;
+    
+}
+.class2{
+    border: 0.5px solid black;
 }
 
 #sections{
@@ -27,17 +36,72 @@
     margin: auto;
     margin-left: 150px;
     margin-top: 20px;
+    
 
 }
 img{
-    height: 130px;
+    border-radius: 10px;
 }
-#section1>div{
+
+img{
+    height: 100px;
+}
+
+#section7>div,#section1>div{
     display: flex;
-    gap: 20px;
+    gap: 100px;
     margin-bottom: 30px;
+    justify-content:space-around;
+    /* border: 1px solid blue; */
 }
+#section6>div,#section2>div{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 30px;
+    justify-content:space-around;
+    /* border: 1px solid blue; */
+}
+
+#section5>div,#section3>div{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 30px;
+    justify-content:space-around;
+    /* border: 1px solid blue; */
+}
+#section4>div{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 30px;
+    justify-content:space-around;
+    /* border: 1px solid blue; */
+}
+
 .class1{
     border: 2px solid grey;
     margin-top: 5px;
+}
+#id5{
+    display: flex;
+}
+#id6{
+    border: 1px solid green;
+    width: 25%;
+    height: 300rem;
+}
+#id4{
+    width: 70%;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+}
+/* #section1>img{
+    justify-content: end;
+    margin-left: 500px;
+} */
+h1{
+    margin: auto;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: grey;
 }
