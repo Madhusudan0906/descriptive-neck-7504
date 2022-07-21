@@ -1,0 +1,22 @@
+
+salon for women : salon_women.html / salonwo.js  // click on view details => details.html
+
+Hair services for women : hairwomen.html / hairwomen.js  // click on view details => detailsHair.html
+
+Women Therapies : womenTherapi.html / womenTherapi.js  // click on view details => detailsSpa.html
+
+salon for men : saloonmen.html / saloon.js       // click on view details => NA
+
+men massage : massagemen.html / massagemen.js    // click on view details => detailsMass.html
+
+ac repair : ac.html / ac.js   // click on view details => detailsAc.html
+
+cleaning contriol : 
+
+Electician :
+
+plumbers :
+
+
+
+click on Add button => loclal storage key : womenSlonArr

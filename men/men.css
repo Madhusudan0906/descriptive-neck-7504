@@ -7,18 +7,19 @@
     width: 80%;
     
     justify-content: space-around;
-    margin-left : 100px;
-    margin-right : 100px;
+    margin-left : 80px;
+    margin-right : 130px;
 }
 #id4{
     height: 100vh;
     overflow: scroll;
 }
 #id1>div>h1{
-    font-size: 36px;
+    font-size: 40px;
     font-weight:1200;
+
     line-height: 48px;
-    font-family: os_bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     -webkit-line-clamp: 2;
     justify-content: center;
     margin-top: 100px;
@@ -26,7 +27,7 @@
     color: black;
 }
 #video1{
-    width: 700px;
+    width: 500px;
     /* border: 1px solid black; */
     border-radius: 10px;
     
@@ -43,28 +44,37 @@
     display: flex;
     gap: 20px;
     margin: auto;
-    margin-left: 280px;
+    margin-left: 190px;
     margin-top: 20px;
    
     
     
 
 }
+.class6{
+    height: 80px;
+    width: 80px;
+}
 img{
     border-radius: 10px;
 }
 
 img{
-    height: 100px;
+    height: 120px;
+    width: 100px;
+   
 }
 
 #section7>div,#section1>div{
     display: flex;
+    
     gap: 100px;
     margin-bottom: 30px;
     justify-content:space-between;
     margin-left : 240px;
     margin-right : 100px;
+    /* padding: 10px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     /* border: 1px solid blue; */
 }
 #section6>div,#section2>div{
@@ -74,6 +84,8 @@ img{
     justify-content:space-between;
     margin-left : 240px;
     margin-right : 100px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px 10px; */
     /* border: 1px solid blue; */
 }
 
@@ -84,6 +96,8 @@ img{
     justify-content:space-between;
     margin-left : 240px;
     margin-right : 100px;
+    /* padding: 10px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     /* border: 1px solid blue; */
 }
 #section4>div{
@@ -93,7 +107,10 @@ img{
     justify-content:space-between;
     margin-left : 240px;
     margin-right : 100px;
-    /* border: 1px solid blue; */
+    /* padding: 10px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* border: 1px solid blu */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;e; */ 
 }
 #id1 ~ .class1{
     border: 2px solid grey;
@@ -145,4 +162,32 @@ button{
     border: 1px solid white;
     color: blue;
     font-weight: 800;
+}
+
+
+.class5{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    width: 75%;
+    margin-left: 80px;
+    /* margin-top: 30px; */
+    text-align:left;
+    background-color: rgb(241, 240, 239);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: rgba(203, 205, 178, 0.1) 0px 4px 12px;
+    
+}
+.class5>h5{
+    margin-bottom: -12px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: 1000;
+    font-size: medium;
+}
+.class5>p{
+    margin-left: 5px;
+}
+.class4{
+    margin-top: 50px;
 }
