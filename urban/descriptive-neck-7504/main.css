@@ -1,0 +1,242 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  background: black;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  margin-top: -50px;
+  z-index: 1;
+}
+#maindiv {
+  margin-top: 50px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 39px;
+  margin: auto;
+}
+#logodiv {
+  /* border: 1px solid white; */
+  width: 14%;
+  height: 100%;
+}
+#logodiv > a > img {
+  width: 100%;
+  height: 100%;
+}
+#loginSignupdiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid white; */
+  width: 50%;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#login::after {
+  content: " \002F ";
+}
+#posterdiv {
+  /* border: 1px solid black; */
+  margin-left: 9px;
+  width: 100%;
+  height: 550px;
+  display: flex;
+}
+#posterdiv > img {
+  width: 100%;
+  height: 100%;
+}
+#middiv,
+#lstdiv {
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  max-width: 100%;
+  height: 550px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#subdiv1 {
+  display: flex;
+  width: 90%;
+  height: 370px;
+  justify-content: space-around;
+}
+#subdiv1 > div {
+  /* border: 1px solid black; */
+  width: 40%;
+  height: 100%;
+}
+#subdiv1 > div:first-child > div {
+  display: flex;
+  margin-bottom: 20px;
+}
+.icon70 {
+  width: 70px;
+  height: 70px;
+}
+.section {
+  line-height: 5px;
+  margin-left: 15px;
+}
+#subdiv1 > div:last-child {
+  padding: 50px;
+}
+#lstdiv > div {
+  /* border: 1px solid black; */
+  width: 83%;
+  display: flex;
+}
+#lstdiv > div > section,
+#lstdiv > div > div {
+  /* border: 1px solid red; */
+  width: 50%;
+}
+#lstdiv > div > div {
+  display: flex;
+  justify-content: space-around;
+}
+#lstdiv > div > div > div {
+  width: 40%;
+}
+#lstdiv > div > div > div > img {
+  width: 100%;
+  height: 500px;
+}
+.ptag {
+  font-size: 18px;
+  color: #757575;
+  line-height: 1.4px;
+}
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  width: 80%;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 12px;
+}
+#numberinput {
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+  height: 60px;
+  width: 70%;
+  margin-bottom: 40px;
+}
+#num {
+  width: 250px;
+  height: 100%;
+  border: #f0f0f0;
+  outline: 0%;
+}
+#numsend {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94px;
+  background-color: #000;
+  border-radius: 6px;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+#download {
+  display: flex;
+  height: 50px;
+  gap: 20px;
+}
+#download > div {
+  width: 140px;
+}
+#download > div > a > img {
+  width: 100%;
+  height: 100%;
+}
+/* selectDiv CSS*/
+#cityselect {
+  border: 1px solid black;
+  position: absolute;
+  background-color: white;
+  width: 330px;
+  height: 140px;
+  padding: 24px 16px;
+  border-radius: 6px;
+  left: 829px;
+  top: 275px;
+}
+#cityselect > p {
+  margin-top: 3px;
+}
+.selector {
+  border: 1px solid black;
+  width: 280px;
+  border-radius: 6px;
+}
+#selectfeild {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+#selectfeild > img {
+  width: 12px;
+  transition: 0.5s;
+}
+#list {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+  overflow: scroll;
+  overflow-x: hidden;
+  list-style: none;
+  padding: 0%;
+}
+.country {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 10px;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+}
+.country img {
+  width: 20px;
+}
+.option {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+}
+.option:hover {
+  background-color: #f0f0f0;
+}
+.hide {
+  visibility: hidden;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+/* selectDiv CSS END*/
