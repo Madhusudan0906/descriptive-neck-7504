@@ -1,18 +1,5 @@
-let selectfeild = document.querySelector("#selectfeild");
-let select_text = document.querySelector("#select_text");
-let options = document.getElementsByClassName("option");
-let list = document.querySelector("#list");
-let arrow = document.querySelector("#arrow");
+import { footer } from "./component/footer.js";
+document.querySelector("#footer").innerHTML = footer();
 
-selectfeild.onclick = () => {
-  list.classList.toggle("hide");
-  arrow.classList.toggle("rotate");
-};
-
-for (option of options) {
-  option.onclick = function () {
-    select_text.innerText = this.innerText;
-    list.classList.toggle("hide");
-    arrow.classList.toggle("rotate");
-  };
-}
+import { header } from "./component/navbar.js";
+document.querySelector("#header").innerHTML = header();

@@ -8,24 +8,7 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <header>
-      <div id="navbar">
-        <div id="logodiv">
-          <a href=""
-            ><img
-              src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
-              alt="company logo"
-          /></a>
-        </div>
-        <div id="loginSignupdiv">
-          <a href="">Blog</a>
-          <a href=""><u>Register As A Professional</u></a>
-          <div>
-            <a id="login" href="">Login</a><a id="signup" href="">Sign Up</a>
-          </div>
-        </div>
-      </div>
-    </header>
+    <header id="header"></header>
     <div id="maindiv">
       <div id="posterdiv">
         <img src="./image/mainimage.png" alt="poster" />
@@ -200,5 +183,26 @@
       </div>
     </div>
   </body>
+  <footer id="footer"></footer>
 </html>
-<script src="./index.js"></script>
+<script>
+  let selectfeild = document.querySelector("#selectfeild");
+  let select_text = document.querySelector("#select_text");
+  let options = document.getElementsByClassName("option");
+  let list = document.querySelector("#list");
+  let arrow = document.querySelector("#arrow");
+
+  selectfeild.onclick = () => {
+    list.classList.toggle("hide");
+    arrow.classList.toggle("rotate");
+  };
+
+  for (option of options) {
+    option.onclick = function () {
+      select_text.innerText = this.innerText;
+      list.classList.toggle("hide");
+      arrow.classList.toggle("rotate");
+    };
+  }
+</script>
+<script src="./index.js" type="module"></script>
