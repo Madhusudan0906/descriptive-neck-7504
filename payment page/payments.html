@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        margin: 0px;
+      }
+      body {
+        background-color: rgb(219, 219, 219);
+      }
+      #content {
+        width: 30%;
+        margin: auto;
+        z-index: -1;
+      }
+      #content > div {
+        background-color: white;
+        width: 100%;
+        padding: 15px;
+        padding-bottom: 20px;
+      }
+      #content>div:first-child{
+        display: flex;
+      }
+      #content>div:first-child>div:first-child>button{
+        background-color: transparent;
+        border: none;
+      }
+      #content>div:first-child>div:last-child{
+        margin-left: 10px;
+      }
+      #content > #line1 {
+        height: 1px;
+        background-color: transparent;
+        padding: 0px;
+      }
+      #content > #line2 {
+        height: 5px;
+        background-color: transparent;
+        padding: 0px;
+      }
+      #content > #space {
+        height: 50px;
+        background-color: white;
+      }
+      #pay>div{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        cursor: pointer;
+      }
+      #pay>div>div{
+        display: flex;
+        
+      }
+      #pay>div>div>img{
+        width: 16px;
+        height: 16px;
+        object-fit:fill;
+      }
+      #pay>div>div>p{
+        margin-left: 10px;
+      }
+      #close{
+                top:7px;
+                position: relative;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                padding: 0px;
+                font-size: 18px;
+                font-weight: 800;
+                background-color: white;
+                margin-left: 72%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            #closew{
+                top:7px;
+                position: relative;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                padding: 0px;
+                font-size: 18px;
+                font-weight: 800;
+                background-color: white;
+                margin-left: 67%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        #cardspop{
+            top:50px;
+            position: absolute;
+            display: none;
+            z-index: 1;
+            width: 100%;
+        }
+            #cards-box{
+            width: 50%;
+            height: 300px;
+            top: 15px;
+            margin: auto;
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+            }
+            #cards-bottom-box{
+                position: relative;
+                height: 50px;
+                border-top: 1px solid grey;
+                box-shadow: 0px -4px 5px rgba(129, 129, 129, 0.75); 
+                padding: 10px; 
+                display: flex;
+                justify-content: space-between;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            #cards-bottom-box>div>button{
+                width: 100%;
+                padding: 10px 50px;
+                font-size: 18px;
+                border-radius: 10px;
+                border: none;
+                color: rgb(199, 199, 199);
+
+            }
+            #cards-content{
+                padding:15px;
+                margin-bottom: 20px;
+            }
+            #cards-content>h3{
+                margin-bottom: 20px ;
+            }
+            #cards-content>form>input:first-child{
+                width: 90%;
+            }
+            #cards-content>form>input{
+                width:20%;
+                padding: 10px;
+                border: 1px solid;
+                outline: none;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            #cards-content>form{
+                margin-bottom: 20px;
+            }
+            #walletspop{
+                top:50px;
+            position: absolute;
+            display: none;
+            z-index: 1;
+            width: 100%;
+            }
+            #wallets-box{
+                width: 40%;
+            height: 300px;
+            top: 15px;
+            margin: auto;
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+            
+            }
+            #wallets-content{
+                padding: 15px;
+            }
+            #wallets-content>img{
+                width: 32px;
+                height: 32px;
+                margin-bottom: 20px;
+            }
+            #wallets-content>div:nth-child(3)>form>input{
+                width: 5%;
+                padding: 10px;
+                font-size: 18px;
+                border: 1px solid;
+                outline: none;
+                border-radius: 5px;
+
+            }
+            #wallets-content>div{
+                margin-bottom: 15px;
+            }
+            #afterservice{
+                top:50px;
+            position: absolute;
+            display: none;
+            z-index: 1;
+            width: 100%;
+            }
+            #afterservice-box{
+                width: 40%;
+            height: 200px;
+            top: 15px;
+            margin: auto;
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+            }
+            #afterservice-box{
+                margin-top: 20px;
+                padding: 20px;
+                text-align: center;
+                line-height: 35px;
+            }
+            #afterservice-box>div>button{
+                margin-top: 30px;
+                width: 30%;
+                padding: 10px;
+                border: none;
+                border-radius: 25px;
+                color: white;
+            }
+            #afterservice-box>div>button:first-child{
+                background-color: green;
+            }
+            #afterservice-box>div>button:last-child{
+                background-color: red;
+               
+            }
+    </style>
+  </head>
+  <body>
+   
+
+    <div id="content">
+      <div>
+        <div>
+            <button onclick="backtocart()"><-</button>
+        </div>
+        
+        <div>
+        <h3>Select Payment method</h3>
+        <p>Amount to pay &#8377;589</p>
+        <!-- add amount from cart price -->
+    </div>
+      </div>
+      <div id="line1"></div>
+      <div id="pay" >
+        <h3>Debit or Credit card</h3>
+        <div onclick="cardpage()">
+          <div>
+            <img src="./card.png"/>
+            <p>Add a Card</p>
+          </div>
+          <div>></div>
+          <!-- > -->
+        </div>
+      </div>
+      <div id="line2"></div>
+      <div id="pay" >
+        <h3>Wallet</h3>
+        <div onclick="walletpage()">
+          <div>
+            <img src="./paytm.png" />
+            <p>Paytm</p>
+          </div>
+          <div>></div>
+          <!-- > -->
+        </div>
+      </div>
+      <div id="line2"></div>
+      <div id="pay" >
+        <h3>UPI</h3>
+        <div>
+          <div>
+            <img src="./upi.png" />
+            <p>Pay via another UPI Id</p>
+          </div>
+          <div>></div>
+          <!-- > -->
+        </div>
+      </div>
+      <div id="line2"></div>
+      <div id="pay" >
+        <h3>Netbanking</h3>
+        <div>
+          <div>
+            <img src="./netbanking.png" />
+            <p>See all banks</p>
+          </div>
+          <div>></div>
+          <!-- > -->
+        </div>
+      </div>
+      <div id="line2"></div>
+      <div id="pay">
+        <h3>Pay after Service</h3>
+        <div onclick="afterservicepaypage()">
+          <div>
+            <img src="./online.png" />
+            <p>pay online after service</p>
+          </div>
+          <div>></div>
+          <!-- > -->
+        </div>
+        <div onclick="afterservicepaypage()">
+          <div>
+            <img src="./offline.png" />
+            <p>pay with cash after service</p>
+          </div>
+          <div>></div>
+          <!-- > -->
+        </div>
+      </div>
+      <div id="line2"></div>
+      <div id="space"></div>
+    </div>
+
+    <div id="cardspop">
+        <div id="close" onclick="closepop()">
+            X
+        </div>
+        <div id="cards-box">
+            <div id="cards-content">
+                <h3>Add new card</h3>
+                <form>
+                    <input type="text" placeholder="Card number" id="cn">
+                    <input type="text" placeholder="MM/YY" id="ed">
+                    <input type="text" placeholder="CVV" id="cvv">
+                </form>
+
+                <input type="checkbox" checked id="saved"><p style="display: inline;margin-left:10px">save the card details securely for future use except CVV</p>
+            </div>
+            <div id="cards-bottom-box">
+                <div>&#8377;598</div><div><button>save and proceed</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="walletspop">
+        <div id="closew" onclick="closepopw()">
+            X
+        </div>
+        <div id="wallets-box">
+            
+            <div id="wallets-content">
+                <img src="paytm.png">
+                <div>
+                    <h3>Link Paytm</h3>
+                    <p>please enter the 6-digit OTP sentby Paytm on +91 54xxxxxx54</p>
+                    <!-- add number from login page -->
+                </div>
+                <div>
+                    <form>
+                        <input type="text" id="">
+                        <input type="text" id="">
+                        <input type="text" id="">
+                        <input type="text" id="">
+                        <input type="text" id="">
+                        <input type="text" id="">
+                    </form>
+                </div>
+                <div>
+                    <p>00.56</p>
+                </div>
+            </div>
+            <div id="cards-bottom-box">
+                <div>&#8377;589</div><div><button>save and proceed</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="afterservice">
+        <div id="closew" onclick="closepopa()">
+            X
+        </div>
+        <div id="afterservice-box">
+            <h3>Pay after service</h3>
+            <p>you can pay after service</p>
+            <div>
+                <button onclick="cntnu()">Continue</button><button onclick="closepopa()">Cancel</button>
+            </div>
+        </div>
+    </div>
+ 
+  </body>
+</html>
+<script>
+    function cardpage(){
+        document.querySelector('#cardspop').style.display="block";
+    }
+    function walletpage(){
+        document.querySelector('#walletspop').style.display="block";
+    }
+   
+    function afterservicepaypage(){
+        document.querySelector('#afterservice').style.display="block";
+    }
+    function closepop(){
+        document.querySelector('#cardspop').style.display="none";
+    }
+    function closepopw(){
+        document.querySelector('#walletspop').style.display="none";
+    }
+    function closepopa(){
+        document.querySelector('#afterservice').style.display="none";
+    }
+    function cntnu(){
+        //cart empty code
+        //create new booking localstorage key
+        //redirect to booking page
+    }
+</script>
