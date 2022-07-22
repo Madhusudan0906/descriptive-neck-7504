@@ -1,433 +1,501 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-        * {
-            margin: 0px;
-        }
-        body {
-            background-color: aqua;
-        }
-        #address{
-                    display: none;
-                }
-        #time-slot{
-                    display: none;
-                }
-        #address-box {
-            width: 70%;
-            height: 600px;
-            top: 15px;
-            margin: auto;
-            position: relative;
-            background-color: white;
-            border-radius: 20px;
-            /* padding: 10px; */
-            /* display: none; */
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 0px;
-        }
-        .gmap_canvas {
-            overflow-y: scroll;
-            overflow-x: hidden;
-            background: none !important;
-            height: 600px;
-            width: 100%;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-
-        }
-        .mapouter {
-            position: relative;
-            text-align: right;
-            height: 500px;
-            width: 100%;
-            grid-row: 1/1/4/2;
-        }
-        #form-box{
-            /* border: 1px solid; */
-            padding: 30px 20px;
-        }
-        #line{
-                border-top: 1px solid rgb(199, 199, 199);
-                margin: 10px 0px ;
-            }
-            #form-ad>input{
-                display: block;
-                width: 90%;
-                font-size: 18px;
-                padding:10px;
-                border-radius: 5px;
-                border: 1px solid rgb(199, 199, 199);
-                margin-bottom: 20px;
-            }
-            #form-ad{
-                margin-top: 20px;
-                grid-row: 1/2/3/3;
-            }
-            #save>button{
-                font-size: 18px;
-                margin-top: 10px;
-                border-radius: 7px;
-                padding: 5px 10px;
-                border: 1px solid rgb(199, 199, 199);
-                
-            }
-            #save>#home-btn{
-                margin-right: 10px;
-                border-color: black;
-                background-color: rgba(202, 201, 201, 0.856);
-            }
-            #save>#other-btn{
-                background-color: transparent;
-            }
-            #bottom-add-slot{
-                bottom: 0px;
-                position: relative;
-                height: 50px;
-                grid-row: 3/2/4/3;
-                border-top: 1px solid grey;
-                box-shadow: 0px -4px 5px rgba(129, 129, 129, 0.75);
-                
-            }
-            #bottom-add-slot>button{
-                font-size: 18px;
-                text-align: center;
-                width: 90%;
-                margin: 10px 20px ;
-                padding: 10px;
-                border-radius: 5px;
-                border:1px solid transparent;
-                color: grey;
-                background-color: rgb(224, 224, 224);
-                pointer-events: none;
-            }
-            #complete-grid{
-                grid-row: 3/1/4/2;
-            }
-            #top-ad-form{
-                display: flex;
-            }
-            #top-ad-form>div>button{
-                padding: 5px;
-                font-size: 16px;
-                font-weight: 600;
-                background-color: transparent;
-                border-radius: 5px;
-                border: 1px solid;
-
-            }
-            #close{
-                top:7px;
-                position: relative;
-                border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                padding: 0px;
-                font-size: 18px;
-                font-weight: 800;
-                background-color: white;
-                margin-left: 81%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-            }
-            #other-inp>input{
-                margin-top: 10px;
-                width: 90%;
-                font-size: 18px;
-                padding:10px;
-                border-radius: 5px;
-                border: 1px solid rgb(199, 199, 199);
-                margin-bottom: 20px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+    * {
+        margin: 0px;
+    }
+    body {
+        background-color: aqua;
+    }
+    #address{
                 display: none;
             }
-            #time-slot-box{
-            width: 50%;
-            height: 600px;
-            top: 15px;
-            margin: auto;
+    #time-slot{
+                display: none;
+            }
+    #address-box {
+        width: 70%;
+        height: 600px;
+        top: 15px;
+        margin: auto;
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+        /* padding: 10px; */
+        /* display: none; */
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0px;
+    }
+    .gmap_canvas {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: none !important;
+        height: 600px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+    }
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 500px;
+        width: 100%;
+        grid-row: 1/1/4/2;
+    }
+    #form-box{
+        /* border: 1px solid; */
+        padding: 30px 20px;
+    }
+    #line{
+            border-top: 1px solid rgb(199, 199, 199);
+            margin: 10px 0px ;
+        }
+        #form-ad>input{
+            display: block;
+            width: 90%;
+            font-size: 18px;
+            padding:10px;
+            border-radius: 5px;
+            border: 1px solid rgb(199, 199, 199);
+            margin-bottom: 20px;
+        }
+        #form-ad{
+            margin-top: 20px;
+            grid-row: 1/2/3/3;
+        }
+        #save>button{
+            font-size: 18px;
+            margin-top: 10px;
+            border-radius: 7px;
+            padding: 5px 10px;
+            border: 1px solid rgb(199, 199, 199);
+            
+        }
+        #save>#home-btn{
+            margin-right: 10px;
+            border-color: black;
+            background-color: rgba(202, 201, 201, 0.856);
+        }
+        #save>#other-btn{
+            background-color: transparent;
+        }
+        #bottom-add-slot{
+            bottom: 0px;
             position: relative;
+            height: 50px;
+            grid-row: 3/2/4/3;
+            border-top: 1px solid grey;
+            box-shadow: 0px -4px 5px rgba(129, 129, 129, 0.75);
+            
+        }
+        #bottom-add-slot>button{
+            font-size: 18px;
+            text-align: center;
+            width: 90%;
+            margin: 10px 20px ;
+            padding: 10px;
+            border-radius: 5px;
+            border:1px solid transparent;
+            color: grey;
+            background-color: rgb(224, 224, 224);
+            pointer-events: none;
+        }
+        #complete-grid{
+            grid-row: 3/1/4/2;
+        }
+        #top-ad-form{
+            display: flex;
+        }
+         #top-ad-form>div>button{
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: transparent;
+            border-radius: 5px;
+            border: 1px solid; 
+
+        } 
+        #close{
+            top:7px;
+            position: relative;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            padding: 0px;
+            font-size: 18px;
+            font-weight: 800;
             background-color: white;
-            border-radius: 20px;
-            }
-            #closeT{
-                top:7px;
-                position: relative;
-                border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                padding: 0px;
-                font-size: 18px;
-                font-weight: 800;
-                background-color: white;
-                margin-left: 72%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-            }
-            #bottom-time-slot{
-                
-                position: relative;
-                height: 50px;
-                border-top: 1px solid grey;
-                box-shadow: 0px -4px 5px rgba(129, 129, 129, 0.75);
+            margin-left: 81%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        #other-inp>input{
+            margin-top: 10px;
+            width: 90%;
+            font-size: 18px;
+            padding:10px;
+            border-radius: 5px;
+            border: 1px solid rgb(199, 199, 199);
+            margin-bottom: 20px;
+            display: none;
+        }
+        #time-slot-box{
+        width: 50%;
+        height: 600px;
+        top: 15px;
+        margin: auto;
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+        }
+        #closeT{
+            top:7px;
+            position: relative;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            padding: 0px;
+            font-size: 18px;
+            font-weight: 800;
+            background-color: white;
+            margin-left: 72%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        #bottom-time-slot{
+            
+            position: relative;
+            height: 50px;
+            border-top: 1px solid grey;
+            box-shadow: 0px -4px 5px rgba(129, 129, 129, 0.75);
 
-                
-            }
-            #bottom-time-slot>button{
-                font-size: 18px;
-                text-align: center;
-                width: 90%;
-                margin: 10px 20px ;
-                padding: 10px;
-                border-radius: 5px;
-                border:1px solid transparent;
-                color: grey;
-                background-color: rgb(224, 224, 224);
-                pointer-events: none;
-            }
-            #slot-choose{
-                height: 500px;
-                overflow-y: scroll;
-                border-top-right-radius: 20px;
-                padding: 15px;
-            }
-            #dates{
-                display: flex;
-                width: 40%;
-                justify-content: space-between;
-            }
-            #dates>div{
-                border: 1px solid;
-                padding: 10px 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 5px;
-                
-            }
-            #timess{
-                display: grid;
-                grid-template-columns: repeat(3,30%);
-                gap:20px;
-            }
-            #timess>div{
-                border: 1px solid rgb(199, 199, 199);
-                /* width: 30%; */
-                text-align: center;
-                border-radius: 5px;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-        <button onclick="showAdd()">address</button>
+            
+        }
+        #bottom-time-slot>button{
+            font-size: 18px;
+            text-align: center;
+            width: 90%;
+            margin: 10px 20px ;
+            padding: 10px;
+            border-radius: 5px;
+            border:1px solid transparent;
+            color: grey;
+            background-color: rgb(224, 224, 224);
+            pointer-events: none;
+        }
+        #slot-choose{
+            height: 500px;
+            overflow-y: scroll;
+            border-top-right-radius: 20px;
+            padding: 15px;
+        }
+        #dates{
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        #dates>div{
+            border: 1px solid rgb(199, 199, 199);
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            color: rgb(199, 199, 199);
+            
+        }
+        #timess{
+            display: grid;
+            grid-template-columns: repeat(3,30%);
+            gap:20px;
+            margin-top: 20px;
+        }
+        #timess>div{
+            border: 1px solid rgb(199, 199, 199);
+            /* width: 30%; */
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            cursor:pointer;
+        }
+        .high{
+            margin-top: 10px ;
+            line-height: 25px;
+        }
+        #dates>.one{
+            border-color: purple;
+            color: purple;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+    <button onclick="showAdd()">address</button>
+    </div>
+
+    <div id="address">
+        <div id="close" onclick="closeAdd()">
+            X
         </div>
 
-        <div id="address">
-            <div id="close" onclick="closeAdd()">
-                X
-            </div>
-
-        <div id="address-box">
-        <div class="mapouter">
-            <div class="gmap_canvas">
-            <iframe
-                width="500"
-                height="600"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=indore&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-            ></iframe>
-            </div>
+    <div id="address-box">
+    <div class="mapouter">
+        <div class="gmap_canvas">
+        <iframe
+            width="500"
+            height="600"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=navalakha&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+        ></iframe>
         </div>
+    </div>
 
-        <div id="form-box">
-            <div id="top-ad-form">
-                <div>
-                    <h3>Block C</h3>
-                <p>Block C, Nanak Pura,Hari Kunj,New Delhi,Delhi 110064,India</p>
-                </div>
-                <div>
-                    <button>
-                        Change
-                    </button>
-                </div>
-            </div>
-            <div id="line"></div>
-            <div id="form-ad">
-            <input type="text" id='house' placeholder="House/Flate Number *" required/>
-            <input type="text" id='landmark' placeholder="Landmark(Optional)"/>
-            </div>
-            <div id="save">
-            <p>Save as</p>
-            <button id="home-btn">Home</button><button id="other-btn">Other</button>
-            </div>
-            <div id="other-inp">
-                <input type="text" placeholder="eg. John's House,Office,garden and etc.">
-            </div>
-        
-        </div>
-        <div id="complete-grid"></div>
-        <div id="bottom-add-slot">
-            <button onclick="openTslot()">Save and proceed to slots</button>
-        </div>
-        </div>
-        </div>
-
-
-
-
-        <div id="time-slot">
-            <div id="closeT" onclick="closeTslot()">
-                X
-            </div>
-
-        <div id="time-slot-box">
-        <div id="slot-choose">
-            <div><img width="16px" height="16px" src="data:image/png;base64,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">
-                Home- Address
-            </div>
-            <div id="line"></div>
+    <div id="form-box">
+        <div id="top-ad-form">
             <div>
-                <h3>Select date of service</h3>
-                <p>Your service will take approx. 1 hr 5mins</p>
+                <h3>Navlakha</h3>
+            <p>Navlakha,401 street,bulding no 404,classic apartment,indore,M.P. 452001,India</p>
             </div>
-            <div id="dates">
-                <div>
-                    <p>Thur</p>
-                    <h3>21</h3>
-                </div>
-                <div>
-                    <p>Thur</p>
-                    <h3>21</h3>
-                </div>
-                <div>
-                    <p>Thur</p>
-                    <h3>21</h3>
-                </div>
-            </div>
-            <div>Free Cancellation till 2hrs before the booked slot, post that &#8377; 50 chargeable</div>
-            <div><h3>Time to start the service</h3></div>
-            <div id="timess">
-                <div>07:00 AM</div>
-                <div>07:30 AM</div>
-                <div>08:00 AM</div>
-                <div>08:30 AM</div>
-                <div>09:00 AM</div>
-                <div>09:30 AM</div>
-                <div>10:00 AM</div>
-                <div>10:30 AM</div>
-                <div>11:00 AM</div>
-                <div>11:30 AM</div>
-                <div>12:00 PM</div>
-                <div>12:30 PM</div>
-                <div>01:00 PM</div>
-                <div>01:30 PM</div>
-                <div>02:00 PM</div>
-                <div>02:30 PM</div>
-                <div>03:00 PM</div>
-                <div>03:30 PM</div>
-                <div>04:00 PM</div>
-                <div>04:30 PM</div>
-                <div>05:00 PM</div>
-                <div>05:30 PM</div>
-                <div>06:00 PM</div>
-                <div>06:30 PM</div>
+            <div>
+                <button>
+                    Change
+                </button>
             </div>
         </div>
-        <div id="bottom-time-slot">
-            <button>proceed to checkout</button>
+        <div id="line"></div>
+        <div id="form-ad">
+        <input type="text" id='house' placeholder="House/Flate Number *" required/>
+        <input type="text" id='landmark' placeholder="Landmark(Optional)"/>
         </div>
+        <div id="save">
+        <p>Save as</p>
+        <button id="home-btn">Home</button><button id="other-btn">Other</button>
         </div>
+        <div id="other-inp">
+            <input type="text" placeholder="eg. John's House,Office,garden and etc." id="other-add">
         </div>
-    </body>
-    </html>
-    <script>
-    function showAdd() {
-        let a = document.querySelector("#address");
-        let box = getComputedStyle(a);
-        if (box.display == "none") {
-        a.style.display = "grid";
-        }
-    }
-    function closeAdd() {
-        let a = document.querySelector("#address");
-        let box = getComputedStyle(a);
-        if (box.display !== "none") {
-        a.style.display = "none";
-        }
-    }
-    function closeTslot(){
-        let a = document.querySelector('#time-slot');
-        let box = getComputedStyle(a);
-        if(box.display!=="none"){
-            a.style.display="none";
-        }
-    }
-    function openTslot(){
-        let a = document.querySelector('#time-slot');
-        let box = getComputedStyle(a);
-        if(box.display=="none"){
-            closeAdd();
-            a.style.display="block";
-            console.log('hello')
-        }
-        
-    }
-    document.querySelector('#home-btn').addEventListener('click',function(){
-        this.style.backgroundColor='rgba(202, 201, 201, 0.856)';
-        this.style.borderColor="black";
-        let other=document.querySelector('#other-btn');
-        other.style.backgroundColor="transparent";
-        other.style.borderColor="rgb(199, 199, 199)";
-        document.querySelector('other-inp').style.display="none";
-    });
-    document.querySelector('#other-btn').addEventListener('click',function(){
-        this.style.backgroundColor='rgba(202, 201, 201, 0.856)';
-        this.style.borderColor="black";
-        let home=document.querySelector('#home-btn');
-        home.style.backgroundColor="transparent";
-        home.style.borderColor="rgb(199, 199, 199)";
+    
+    </div>
+    <div id="complete-grid"></div>
+    <div id="bottom-add-slot">
+        <button onclick="openTslot()">Save and proceed to slots</button>
+    </div>
+    </div>
+    </div>
 
-        document.querySelector('other-inp').style.display="block";
-    })
 
-    let id;
-    function debounce(func,delay){
-        if(id){
-            clearInterval(id);
-        }
-        id = setInterval(function (){
-            func();
-        },delay);
+
+
+    <div id="time-slot">
+        <div id="closeT" onclick="closeTslot()">
+            X
+        </div>
+
+    <div id="time-slot-box">
+    <div id="slot-choose">
+        <div id="top-time-add">
+        </div>
+        <div id="line"></div>
+        <div class="high">
+            <h3>Select date of service</h3>
+            <p style="width:48%;background-color: grey; padding: 2px 10px;color:white;border-radius: 5px;">Your service will take approx. 1 hr 5mins</p>
+        </div>
+        <div id="dates">
+            <div class="one">
+                <p>Sun</p>
+                <h3>24</h3>
+            </div>
+            <div class="two">
+                <p>Mon</p>
+                <h3>25</h3>
+            </div>
+            <div class="three">
+                <p>Tue</p>
+                <h3>26</h3>
+            </div>
+        </div>
+        <div class="high" style="width:90%;background-color: grey; padding: 2px 10px;color:white;border-radius: 5px;">Free Cancellation till 2hrs before the booked slot, post that &#8377;50 chargeable</div>
+        <div class="high"><h3>Time to start the service</h3></div>
+        <div id="timess">
+            <div onclick="addTimeslot(1)">07:00 AM</div>
+            <div onclick="addTimeslot(2)">07:30 AM</div>
+            <div onclick="addTimeslot(3)">08:00 AM</div>
+            <div onclick="addTimeslot(4)">08:30 AM</div>
+            <div onclick="addTimeslot(5)">09:00 AM</div>
+            <div onclick="addTimeslot(6)">09:30 AM</div>
+            <div onclick="addTimeslot(7)">10:00 AM</div>
+            <div onclick="addTimeslot(8)">10:30 AM</div>
+            <div onclick="addTimeslot(9)">11:00 AM</div>
+            <div onclick="addTimeslot(10)">11:30 AM</div>
+            <div onclick="addTimeslot(11)">12:00 PM</div>
+            <div onclick="addTimeslot(12)">12:30 PM</div>
+            <div onclick="addTimeslot(13)">01:00 PM</div>
+            <div onclick="addTimeslot(14)">01:30 PM</div>
+            <div onclick="addTimeslot(15)">02:00 PM</div>
+            <div onclick="addTimeslot(16)">02:30 PM</div>
+            <div onclick="addTimeslot(17)">03:00 PM</div>
+            <div onclick="addTimeslot(18)">03:30 PM</div>
+            <div onclick="addTimeslot(19)">04:00 PM</div>
+            <div onclick="addTimeslot(20)">04:30 PM</div>
+            <div onclick="addTimeslot(21)">05:00 PM</div>
+            <div onclick="addTimeslot(22)">05:30 PM</div>
+            <div onclick="addTimeslot(23)">06:00 PM</div>
+            <div onclick="addTimeslot(24)">06:30 PM</div>
+        </div>
+    </div>
+    <div id="bottom-time-slot">
+        <button onclick="closeTslot()">proceed to checkout</button>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+function showAdd() {
+    let a = document.querySelector("#address");
+    let box = getComputedStyle(a);
+    if (box.display == "none") {
+    a.style.display = "grid";
+    }
+}
+function closeAdd() {
+    let a = document.querySelector("#address");
+    let box = getComputedStyle(a);
+    if (box.display !== "none") {
+    a.style.display = "none";
+    }
+}
+function closeTslot(){
+    let a = document.querySelector('#time-slot');
+    let box = getComputedStyle(a);
+    if(box.display!=="none"){
+        a.style.display="none";
+    }
+}
+function openTslot(){
+    let address="";
+    let house=document.querySelector('#house').value;
+    let landmark = document.querySelector('#landmark').value;
+    let other = document.querySelector('#other-add').value;
+    address+=house;
+    if(landmark!==null){
+            address+=" "+landmark;
+    }
+    if(other!==null){
+        address+=" "+other;
+    }
+
+    localStorage.setItem('address',address);
+    localStorage.setItem('date','Sun 24');
+    let a = document.querySelector('#time-slot');
+    let box = getComputedStyle(a);
+    if(box.display=="none"){
+        closeAdd();
+        a.style.display="block";
+        document.querySelector('#top-time-add').innerHTML=`<img width="16px" height="16px" src="data:image/png;base64,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">
+            ${address}`;
     }
     
-    document.querySelector('#house').addEventListener('input',debounce(addAddress,1000));
+}
+document.querySelector('#home-btn').addEventListener('click',function(){
+    this.style.backgroundColor='rgba(202, 201, 201, 0.856)';
+    this.style.borderColor="black";
+    let other=document.querySelector('#other-btn');
+    other.style.backgroundColor="transparent";
+    other.style.borderColor="rgb(199, 199, 199)";
+    document.querySelector('#other-inp>input').style.display="none";
+});
+document.querySelector('#other-btn').addEventListener('click',function(){
+    this.style.backgroundColor='rgba(202, 201, 201, 0.856)';
+    this.style.borderColor="black";
+    let home=document.querySelector('#home-btn');
+    home.style.backgroundColor="transparent";
+    home.style.borderColor="rgb(199, 199, 199)";
 
-   
-    function addAddress(){
-        let house=document.querySelector('#house').value;
-        let btn=document.querySelector('#bottom-add-slot>button');
-        if(house.length>4){
-            btn.style.backgroundColor='purple';
-            btn.style.color="white";
-            btn.style.pointerEvents="all";
-        }else{
-            btn.style.backgroundColor='rgb(224, 224, 224)';
-            btn.style.color="grey";
-            btn.style.pointerEvents="none"
-        }
+    document.querySelector('#other-inp>input').style.display="block";
+})
+
+let id;
+function debounce(func,delay){
+    if(id){
+        clearInterval(id);
     }
-    </script>
+    id = setInterval(function (){
+        func();
+    },delay);
+}
+
+document.querySelector('#house').addEventListener('input',debounce(addAddress,1000));
+
+
+function addAddress(){
+    let house=document.querySelector('#house').value;
+    let btn=document.querySelector('#bottom-add-slot>button');
+    if(house.length>4){
+        btn.style.backgroundColor='purple';
+        btn.style.color="white";
+        btn.style.pointerEvents="all";
+    }else{
+        btn.style.backgroundColor='rgb(224, 224, 224)';
+        btn.style.color="grey";
+        btn.style.pointerEvents="none"
+    }
+}
+
+document.querySelector('#dates>.one').addEventListener('click',function(){
+    this.style.borderColor='purple';
+    this.style.color="purple";
+    document.querySelector('#dates>.two').style.borderColor="rgb(199,199,199)";
+    document.querySelector('#dates>.three').style.borderColor="rgb(199,199,199)";
+    document.querySelector('#dates>.two').style.color="rgb(199,199,199)";
+    document.querySelector('#dates>.three').style.color="rgb(199,199,199)";
+    date=this.innerText;
+    localStorage.setItem('date',date);
+})
+document.querySelector('#dates>.two').addEventListener('click',function(){
+    this.style.borderColor='purple';
+    this.style.color="purple";
+    document.querySelector('#dates>.one').style.borderColor="rgb(199,199,199)";
+    document.querySelector('#dates>.three').style.borderColor="rgb(199,199,199)";
+    document.querySelector('#dates>.one').style.color="rgb(199,199,199)";
+    document.querySelector('#dates>.three').style.color="rgb(199,199,199)";
+    date=this.innerText;
+    localStorage.setItem('date',date);
+})
+document.querySelector('#dates>.three').addEventListener('click',function(){
+    this.style.borderColor='purple';
+    this.style.color="purple";
+    document.querySelector('#dates>.two').style.borderColor="rgb(199,199,199)";
+    document.querySelector('#dates>.one').style.borderColor="rgb(199,199,199)";
+    document.querySelector('#dates>.two').style.color="rgb(199,199,199)";
+    document.querySelector('#dates>.one').style.color="rgb(199,199,199)";
+    date=this.innerText;
+    localStorage.setItem('date',date);
+})
+
+function addTimeslot(n){
+    let timeslot=document.querySelector(`#timess>div:nth-child(${n})`).innerHTML;
+    localStorage.setItem('timeslot',timeslot);
+    document.querySelector('#bottom-time-slot>button').style.backgroundColor="purple";
+    document.querySelector('#bottom-time-slot>button').style.color="white";
+    document.querySelector('#bottom-time-slot>button').style.pointerEvents="all";
+}
+
+
+</script>
