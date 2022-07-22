@@ -15,10 +15,7 @@
         </style>
 </head>
 <body>
-    <div>
-        <h1>Navbar</h1>
-
-    </div>
+    <header id="navbar"></header>
 
     <div id="id1">
         <div>
@@ -85,7 +82,15 @@
     </div>
 </div>
 </div>
-<div id="footer"><h1>footer</h1></div>
+<div id="footer"></div>
 </body>
 </html>
 <script src="./ac.js"></script>
+<script type="module">
+    import {header} from "../component/navbar.js"
+
+    document.getElementById("navbar").innerHTML = header()
+
+    import {footer} from "../component/footer.js"
+    document.getElementById("footer").innerHTML = footer()
+</script>

@@ -13,10 +13,7 @@
     </style>
 </head>
 <body>
-    <div>
-        <h1>Navbar</h1>
-
-    </div>
+    <header id="navbar"></header>
 
     <div id="id1">
         <div>
@@ -87,28 +84,15 @@
     </div>
 </div>
 </div>
-<div id="footer"><h1>footer</h1></div>
+<div id="footer"></div>
 </body>
 </html>
-<script>
-    // var myIndex = 0;
-    // carousel();
-    
-    // function carousel() {
-    //   var i;
-    //   var x = document.getElementsByClassName("mySlides");
-    //   for (i = 0; i < x.length; i++) {
-    //     x[i].style.display = "none";  
-    //   }
-    //   myIndex++;
-    //   if (myIndex > x.length) {myIndex = 1}    
-    //   x[myIndex-1].style.display = "block";  
-    //   setTimeout(carousel, 2000); // Change image every 2 seconds
-//     // }
- 
-//     var vid = document.getElementById("video1");
-// vid.muted = true;
+<script type="module">
+    import {header} from "../component/navbar.js"
 
+    document.getElementById("navbar").innerHTML = header()
 
-    </script>
+    import {footer} from "../component/footer.js"
+    document.getElementById("footer").innerHTML = footer()
+</script>
     <script src="./salonwo.js"></script>
