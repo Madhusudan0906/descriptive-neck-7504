@@ -11,11 +11,11 @@ men massage : massagemen.html / massagemen.js    // click on view details => det
 
 ac repair : ac.html / ac.js   // click on view details => detailsAc.html
 
-cleaning contriol : 
+cleaning contriol : clening.html / cleaning.js
 
-Electician :
+Electician : electrician.html / electrician.js
 
-plumbers :
+plumbers : plumber.html / plumber.js
 
 
 

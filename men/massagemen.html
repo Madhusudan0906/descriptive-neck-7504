@@ -14,10 +14,7 @@
         </style>
 </head>
 <body>
-    <div>
-        <h1>Navbar</h1>
-
-    </div>
+<header id="navbar"></header>
 
     <div id="id1">
         <div>
@@ -62,7 +59,7 @@
     <div id="section5"><h1>Work Destress</h1></div>
     <div class="class1"></div>
   
-    >
+    
     
     <div id="section7"> <h1>Add-Ons</h1></div>
     <div class="class1"></div>
@@ -98,7 +95,15 @@
     </div>
 </div>
 </div>
-<div id="footer"><h1>footer</h1></div>
+<div id="footer"></div>
 </body>
 </html>
 <script src="./massagemen.js"></script>
+<script type="module">
+    import {header} from "../component/navbar.js"
+
+    document.getElementById("navbar").innerHTML = header()
+
+    import {footer} from "../component/footer.js"
+    document.getElementById("footer").innerHTML = footer()
+</script>
