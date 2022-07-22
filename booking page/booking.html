@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                margin: 0px;
+            }
+            body{
+                background-color: #f7f8fa;
+                text-align: center;
+            }
+            h1{
+                text-align: center;
+                margin-top: 30px;
+            }
+            #top-bar{
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            #top-bar>div{
+                border: 1px solid;
+                padding: 0px 15px;
+                cursor: pointer;
+            }
+            #top-bar>div>h2{
+                padding: 5px;
+            }
+            #top-bar>div:first-child{
+                background-color: black;
+                color: white;
+                border: 2px;
+            }
+            #ongoing{
+                display: block;
+                
+            } 
+            #ongoing>p,#history>p{
+                margin-top: 30px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            #history{
+                display: none;
+            }
+           #ongoing>div,#history>div{
+            background-color: black;
+            color: white;
+            width:15%;
+            padding:  5px;
+            margin: auto;
+           }
+        </style>
+    </head>
+    <body>
+        <header id="navbar"></header>
+        <h1>MY BOOKING</h1>
+        <div id="top-bar">
+            <div onclick="ongoingb()"><h2>ONGOING</h2></div><div onclick="historya()"><h2>HISTORY</h2></div>
+        </div>
+        <div id="ongoing">
+            <p>you dont have any active projects right now</p>
+            <div id="ogbooking">
+                <h3>BOOK A SERVICE</h3>
+            </div>
+        </div>
+        <div id="history">
+            <p>you never made any booking</p>
+            <div id="historybooking">
+                <h3>BOOK A SERVICE</h3>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    function ongoingb(){
+        let on=document.querySelector('#top-bar>div:first-child');
+        let off=document.querySelector('#top-bar>div:last-child');
+        on.style.backgroundColor="black";
+        on.style.color="white";
+        on.style.border="2px";
+        off.style.backgroundColor="transparent";
+        off.style.color="black";
+        off.style.border="1px solid";
+
+        document.querySelector('#ongoing').style.display="block";
+        document.querySelector('#history').style.display="none";
+        
+    }
+    function historya(){
+        let off=document.querySelector('#top-bar>div:first-child');
+        let on=document.querySelector('#top-bar>div:last-child');
+        on.style.backgroundColor="black";
+        on.style.color="white";
+        on.style.border="2px";
+        off.style.backgroundColor="transparent";
+        off.style.color="black";
+        off.style.border="1px solid";
+        document.querySelector('#ongoing').style.display="none";
+        document.querySelector('#history').style.display="block";
+    }
+</script>
