@@ -359,3 +359,17 @@ button{
     background-color: rgb(7, 7, 7);
   }
   /* FooterEnd */
+
+
+  #download {
+    display: flex;
+    height: 50px;
+    gap: 20px;
+  }
+  #download > div {
+    width: 140px;
+  }
+  #download > div > a > img {
+    width: 100%;
+    height: 100%;
+  }
