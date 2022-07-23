@@ -13,6 +13,7 @@
   position: relative;
   margin-left:370px;
 
+
 }
 #id7>a{
   color: rgb(249, 248, 248);
@@ -357,5 +358,20 @@ button{
   }
   #footer{
     background-color: rgb(7, 7, 7);
+  }
+
+/* 
+New css */
+  #download {
+    display: flex;
+    height: 50px;
+    gap: 20px;
+  }
+  #download > div {
+    width: 140px;
+  }
+  #download > div > a > img {
+    width: 100%;
+    height: 100%;
   }
   /* FooterEnd */

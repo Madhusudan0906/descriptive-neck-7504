@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: axiforma-regular,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;;
+        }
+        #login-bar{
+            position:  fixed;
+            background-color: white;
+            margin-left: 73%;
+            width: 27%;
+            height: auto;
+            top: 0px;
+            bottom: 0px;
+            z-index: 1;
+            display: none; 
+            padding-top: 10px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            
+        }
+        #otp-bar{
+            position:  fixed;
+            background-color: white;
+            margin-left: 73%;
+            width: 27%;
+            height: auto;
+            top: 0px;
+            bottom: 0px;
+            z-index: 1;
+            display: none; 
+            padding-top: 10px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            
+        }
+        #nav{
+            display: flex;
+            justify-content: flex-end;
+
+        }
+        #lhb{
+            display: inline;
+            margin-left: 5px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        #x{
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            margin-top: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+
+        }
+        #line{
+            border-top: 1px solid rgb(199, 199, 199);
+            margin: 10px 0px ;
+        }
+        #form{
+            margin-left: 15px;
+            margin-top: 30px;
+            display: flex;
+
+        }
+        #form>div{
+            padding: 0px;
+            display: flex;
+            border: 1px solid rgb(199, 199, 199);
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            gap:7px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            cursor: pointer;
+        }
+        #form>div>p{
+            font-weight: 600;
+        }
+        #down-arrw{
+                margin: 0px;
+                padding: 0px;
+                width: 0.5px;
+                border-left: 5px solid transparent ;
+                border-right: 5px solid transparent;
+                border-top: 5px solid black;
+            }
+        #form>#mob_no{
+            width: 58%;
+            border: 1px solid rgb(199, 199, 199);
+            border-left: none;
+            outline: none;
+            font-size: 16px;
+            padding: 10px;
+            font-weight: 600;
+            color: rgb(179, 179, 179);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #btn-cntnu{
+            
+            text-align: center;
+            padding: 12px;
+            background-color: #212121;
+            color: white;
+            width: 85%;
+            margin-left: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        #btn-cntnu:hover{
+            background-color: #303030;
+        }
+        #link{
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+        #boxi{
+            font-size: 18px;
+            width: 10%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(199, 199, 199);
+            outline: none;
+        }
+        #OTP-fields{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+        }
+        #btn-lgn{
+            text-align: center;
+            padding: 12px;
+            background-color: #afafaf;
+            color: white;
+            width: 85%;
+            margin-left: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        #text-cntr{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        #text-cntr>h3{
+            margin-bottom: 10px;
+        }
+        #text-cntr>p{
+            width: 65%;
+            margin: auto;
+            color: #a0a0a0;
+        }
+        #backarrow{
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            margin-top: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <button onclick="toggleLogin()">
+            login
+        </button>
+    </div>
+    
+    <div id="login-bar">
+
+        <button onclick="toggleLogin()" id="x">x</button>
+        <p id="lhb">Please login to continue</p>
+        <div id="line"></div>
+        <div id="form">
+            <div><img src="./india.png" width="32px" height="32px"><p>+91</p> <div id="down-arrw"></div></div>
+            <input type="number" placeholder="Your phone number" id="mob_no" required>
+        </div>
+        <div id="btn-cntnu" onclick="loginContinue()">
+            Continue
+        </div>
+    </div>
+    <div id="otp-bar">
+
+        <button onclick="toggleOTP()" id="backarrow"><-</button>
+        <p id="lhb">Please login to continue</p>
+        <div id="line"></div>
+
+        <div id="text-cntr">
+            <h3>Enter your Verification code</h3>
+            <p>We have sent you a 4 digit OTP on Your Number <a onclick="toggleOTP()" id="link">Edit</a></p>
+        </div>
+        <div id="OTP-fields">
+            <input id="boxi" required><input id="boxi" required><input id="boxi" required><input id="boxi" required>
+        </div>
+        <div id="count-down">
+
+        </div>
+        <div id="btn-lgn">
+            Login
+        </div>
+    </div>
+  
+</div>
+</body>
+</html>
+<script>
+    function toggleLogin(){
+        let a=document.querySelector('#login-bar');
+        const abc = getComputedStyle(a);
+        console.log(abc.display);
+        if(abc.display=="none"){
+            a.style.display='block';
+        }else{
+            a.style.display='none';
+        }
+    }
+    function toggleOTP(){
+        let a=document.querySelector('#otp-bar');
+        const abc = getComputedStyle(a);
+        console.log(abc.display);
+        if(abc.display=="none"){
+            a.style.display='block';
+        }else{
+            a.style.display='none';
+        }
+    }
+    // btn-cntnu
+    function loginContinue(){
+        let a=check();
+        if(a){
+            alert("Please check your phone for OTP.");
+            toggleOTP();
+        }else{
+            alert("please enter correct number")
+        }
+    }
+
+    function check(){
+        let no=document.querySelector('#mob_no').value;
+        if(no.length==10){
+            return true;
+        }
+        return false;
+    }
+</script>
