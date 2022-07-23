@@ -2,7 +2,7 @@ let footer = () => {
     return `    <div id="footer_row1">
       <ul class="row1">
         <li>
-          <a href="./AboutUs.html" target="blank"
+          <a href="../AboutUs.html" target="blank"
             >About Us</a
           >
         </li>
@@ -434,7 +434,7 @@ let footer = () => {
             <a href="https://twitter.com/urbancompany_UC" target="blank"
               ><img
                 class="size20"
-                src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504947.png?token=exp=1658456037~hmac=64cf41f2fe5ca9c5c616c01dbd24a146"
+                src="https://tse2.mm.bing.net/th?id=OIP.aRjblcD1Z17jDl9vNEXapgHaHa&pid=Api&P=0"
                 alt="twiter"
             /></a>
           </li>
@@ -458,7 +458,7 @@ let footer = () => {
             <a href="https://www.youtube.com/channel/UCjNJe0jgLP257X9LsSuyIpg" target="blank"
               ><img
                 class="size20"
-                src="https://cdn-icons.flaticon.com/png/512/3938/premium/3938037.png?token=exp=1658456227~hmac=7b9999901931ec4c832495ecf71c8850"
+                src="https://tse3.mm.bing.net/th?id=OIP.lX0Sm3w4H2SToVujSVgZFwHaEr&pid=Api&P=0"
                 alt="youtube"
             /></a>
           </li>
@@ -466,7 +466,7 @@ let footer = () => {
             <a href="https://www.linkedin.com/company/urbancompany/" target="blank"
               ><img
                 class="size20"
-                src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1658456285~hmac=0c160251860edc6a86e282fbdcb72e4d"
+                src="https://tse4.mm.bing.net/th?id=OIP.424HykKb9dM9YVgH1tPl7AHaHa&pid=Api&P=0"
                 alt="linkedin"
             /></a>
           </li>
@@ -474,7 +474,7 @@ let footer = () => {
             <a href="https://www.pinterest.com/UrbanCompanyOfficial/" target="blank"
               ><img
                 class="size20"
-                src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504932.png?token=exp=1658456318~hmac=71dd7105d02208eff3b64b6e9e14c38a"
+                src="https://tse1.mm.bing.net/th?id=OIP.K9618mX9j6bkjxXAMKGhKQHaHa&pid=Api&P=0"
                 alt="pinterest"
             /></a>
           </li>
