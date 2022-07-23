@@ -415,11 +415,12 @@
     function cntnu(){
       let booked=JSON.parse(localStorage.getItem('Booked'))||[];
       let obj={};
-      obj[date]=localStorage.getItem('date');
-      obj[time]=localStorage.getItem('timeslot');
-      obj[prods]=localStorage.getItem('womenSlonArr');
-      obj[pay]=localStorage.getItem('pay');
-      obj[address]=localStorage.getItem('address');
+      obj['user']=localStorage.getItem('logined');
+      obj['date']=localStorage.getItem('date');
+      obj['time']=localStorage.getItem('timeslot');
+      obj['prods']=JSON.stringify(localStorage.getItem('womenSlonArr'));
+      obj['pay']=localStorage.getItem('pay');
+      obj['address']=localStorage.getItem('address');
 
       localStorage.removeItem('date');
       localStorage.removeItem('timeslot');
