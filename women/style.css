@@ -11,11 +11,11 @@
   padding: 10px 10px;
   border-radius: 10px;
   position: relative;
-  margin-left:400px;
+  margin-left:370px;
 
 }
-a{
-  color: black;
+#id7>a{
+  color: rgb(249, 248, 248);
   
   font-size: 30px;
 }
