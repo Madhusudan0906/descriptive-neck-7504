@@ -8,12 +8,16 @@
     <title> Urban Company-Get Expert Professional Services at Home</title>
     <link rel="icon" href="./logo1.png">
     <link rel="stylesheet" href="./style/index.css">
+    <!-- <link rel="stylesheet" href="../descriptive-neck-7504/main.css"> -->
+    <!-- <link rel="stylesheet" href="../descriptive-neck-7504/index.html"> -->
 </head>
 <body>
 
-   
     <div id="cont">
+        <!-- <img src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg" alt=""> -->
+
         <div id="dev">
+
             <img src="./urbanlogo.png" alt=""> 
             <div id="dev1">
                 <a href="#">Blog</a>
@@ -21,11 +25,22 @@
                 <a href="#">Login/Signup</a>
             </div>
         </div>
-
         <h1>Home services, on demand.</h1> <br> <br>
         
     <div id="inpu">
-        <input type="text" id="input1" placeholder="Location">
+        <!-- <input type="text" id="input1" placeholder="Location"> -->
+
+        <select name="Location" id="input1">
+            <option value="">Delhi</option>
+            <option value="">Banglore</option>
+            <option value="">Mumbai</option>
+            <option value="">Hyderabad</option>
+            <option value="">Patna</option>
+            <option value="">Vadodra</option>
+        </select>
+
+
+       
        
         <!-- <img id="img1" src="./search.png" alt=""> -->
         <input type="text" id="input2" placeholder="Search for services"> 
@@ -41,25 +56,23 @@
    
     <div id="cont2">
         <div id="grid">
-
-            <a href="#"><img src="./saloon women.png" alt=""></a> 
+            <a href="../descriptive-neck-7504/women/salon_women.html"><img src="./saloon women.png" alt=""></a> 
             <p>Salon for women</p>
         </div>
         <div id="grid">
-            <a href="#"><img src="./hair spa.webp" alt=""></a>
+            <a href="../descriptive-neck-7504/women/hairwomen.html"><img src="./hair spa.webp" alt=""></a>
             <p>Hair, Skin and Nails</p>
         </div>
         <div id="grid">
-           <a href="#"> <img src="./women therapy.png" alt=""></a>
+           <a href="../descriptive-neck-7504/women/womenTherapi.html"> <img src="./women therapy.png" alt=""></a>
             <p>Womens Therapies</p>
         </div>
         <div id="grid">
-           <a href="#"> <img src="./men salon.png" alt=""></a>
+           <a href="../descriptive-neck-7504/men/saloonmen.html"> <img src="./men salon.png" alt=""></a>
             <p>Saloon for men's</p>
         </div>
         <div id="grid">
-            <a href="#"><img src="./men therapy.png" alt=""></a>
-
+            <a href="../descriptive-neck-7504/men/massagemen.html"><img src="./men therapy.png" alt=""></a>
 
             <p>Men's Therapies</p>
         </div>
@@ -70,26 +83,26 @@
     <h1 id="h1">Home Services</h1>
     <div id="cont3">
         <div id="grid">
-            <img src="./appliances.png" alt=""> <br>
+           <a href="../descriptive-neck-7504/men/ac.html"> <img src="./appliances.png" alt=""> <br></a>
             <p>Appliances Repair</p>
         </div>
         <div id="grid">
-            <img src="./painting.png" alt=""> <br>
-            <p>Home Painting</p>
+           <a href="../descriptive-neck-7504/day4/plumber.html"> <img src="./plumber1.png" alt=""> <br></a>
+            <p>Plumber</p>
         </div>
         <div id="grid">
-            <img src="./cleaning pest.png" alt=""> <br>
+           <a href="../descriptive-neck-7504/day4/clening.html"> <img src="./cleaning pest.png" alt=""> <br></a>
             <p>Cleaning and Pest</p>
         </div>
         <div id="grid">
-            <img src="./disinfection.png" alt=""> <br>
-            <p>Disinfection</p>
+            <a href="../descriptive-neck-7504/day4/electrician.html"><img src="./ele.jpeg" alt=""> <br></a>
+            <p>Electrician</p>
         </div>
-        <div id="grid">
+        <!-- <div id="grid">
             <img src="./home repair.png" alt=""> <br>
 
             <p>Home Repair</p>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -209,34 +222,31 @@
 
 
       <h2>Salon, Spa and Massage Services</h2>
-
       <span id="span2">Hygenic and Single use products | low contact service</span>
-
       <div id="cont4">
         <div id="grid1">
             <img src="./salonprime.webp" alt="">
             <p>salon Prime</p>
-            <span>Free waxing</span>
+            <span id="span3">Free waxing</span>
         </div>
         <div id="grid1">
             <img src="./salonformen.jpeg" alt="">
             <p>salon for men</p>
-            <span>flat ₹100 off</span>
+            <span id="span3">flat ₹100 off</span>
         </div>
         <div id="grid1">
             <img src="./spaforwomen.webp" alt="">
             <p>Spa for women</p>
-            <span>Free head massage</span>
+            <span id="span3">Free head massage</span>
         </div>
         <div id="grid1">
             <img src="./massageformen.webp" alt="">
             <p>Massage for men</p>
-            <span>flat ₹499 off</span>
+            <span id="span3">flat ₹499 off</span>
         </div>
         <div id="grid1">
             <img src="./partymakeup.webp" alt="">
             <p>Party Makeup</p>
-
             <!-- <span>Artists trained by chandni singh studio</span> -->
         </div>
     </div>
@@ -352,16 +362,8 @@
         <img src="./skillindia.webp" alt="">
     </div>
 
-<!-- <div id="footer"></div> -->
-
-
+   
 </body>
-<footer id="footer"></footer>
+
 </html>
 
-<script type="module">
-   
-
-    import {footer} from "../../component/footer.js"
-    document.getElementById("footer").innerHTML = footer()
-</script>
