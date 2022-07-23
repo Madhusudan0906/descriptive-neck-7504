@@ -195,13 +195,15 @@
   selectfeild.onclick = () => {
     list.classList.toggle("hide");
     arrow.classList.toggle("rotate");
-  };
-
+  }
   for (option of options) {
     option.onclick = function () {
       select_text.innerText = this.innerText;
       list.classList.toggle("hide");
       arrow.classList.toggle("rotate");
+      if (select_text.innerText != "Select your city") {
+        window.location.href = "./urban/Urban Company clone/service.html";
+      }
     };
   }
 </script>

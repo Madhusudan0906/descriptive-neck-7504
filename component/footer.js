@@ -2,7 +2,7 @@ let footer = () => {
     return `    <div id="footer_row1">
       <ul class="row1">
         <li>
-          <a href="../AboutUs.html" target="blank"
+          <a href="./AboutUs.html" target="blank"
             >About Us</a
           >
         </li>
@@ -57,7 +57,7 @@ let footer = () => {
           >
         </li>
         <li>
-          <a href="https://www.urbancompany.com/contact-us" target="_blank"
+          <a href="#" target=""
             >Contact Us</a
           >
         </li>
@@ -434,7 +434,7 @@ let footer = () => {
             <a href="https://twitter.com/urbancompany_UC" target="blank"
               ><img
                 class="size20"
-                src="https://tse2.mm.bing.net/th?id=OIP.aRjblcD1Z17jDl9vNEXapgHaHa&pid=Api&P=0"
+                src="./image/twitter.png"
                 alt="twiter"
             /></a>
           </li>
@@ -442,7 +442,7 @@ let footer = () => {
             <a href="https://www.facebook.com/UrbanCompany/" target="blank"
               ><img
                 class="size20"
-                src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png"
+                src="./image/facebook.png"
                 alt="facebook"
             /></a>
           </li>
@@ -450,7 +450,7 @@ let footer = () => {
             <a href="https://www.instagram.com/urbancompany/" target="blank"
               ><img
                 class="size20"
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                src="./image/instagram.png"
                 alt="insta"
             /></a>
           </li>
@@ -458,7 +458,7 @@ let footer = () => {
             <a href="https://www.youtube.com/channel/UCjNJe0jgLP257X9LsSuyIpg" target="blank"
               ><img
                 class="size20"
-                src="https://tse3.mm.bing.net/th?id=OIP.lX0Sm3w4H2SToVujSVgZFwHaEr&pid=Api&P=0"
+                src="./image/youtube.png"
                 alt="youtube"
             /></a>
           </li>
@@ -466,7 +466,7 @@ let footer = () => {
             <a href="https://www.linkedin.com/company/urbancompany/" target="blank"
               ><img
                 class="size20"
-                src="https://tse4.mm.bing.net/th?id=OIP.424HykKb9dM9YVgH1tPl7AHaHa&pid=Api&P=0"
+                src="./image/linkedin.png"
                 alt="linkedin"
             /></a>
           </li>
@@ -474,7 +474,7 @@ let footer = () => {
             <a href="https://www.pinterest.com/UrbanCompanyOfficial/" target="blank"
               ><img
                 class="size20"
-                src="https://tse1.mm.bing.net/th?id=OIP.K9618mX9j6bkjxXAMKGhKQHaHa&pid=Api&P=0"
+                src="./image/pinterest.png"
                 alt="pinterest"
             /></a>
           </li>
