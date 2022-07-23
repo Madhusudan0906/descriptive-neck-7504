@@ -2,7 +2,7 @@ let header = () => {
   let logined=localStorage.getItem('logined')||false;
   let loginData;
   if(logined){
-    loginData=`<a id="booking" href="./booking page/bookingpage.html">Booking page</a><a onclick="logout()">logout</a>`;
+    loginData=`<a id="booking" href="./booking page/booking.html">Booking page</a>&nbsp;&nbsp;<a onclick="logout()">logout</a>`;
   }else{
     loginData='<a id="login" onclick="toggleLogin()">Login</a><a id="signup">Sign Up</a>'
   }
@@ -54,7 +54,7 @@ function otpbar(){
   <div id="count-down">
 
   </div>
-  <div id="btn-lgn">
+  <div id="btn-lgn" onclick="logindo()">
       Login
   </div>`;
 }
