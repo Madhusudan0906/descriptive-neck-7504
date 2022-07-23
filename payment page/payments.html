@@ -242,7 +242,7 @@
         
         <div>
         <h3>Select Payment method</h3>
-        <p>Amount to pay &#8377;589</p>
+        <p id="amount"></p>
         <!-- add amount from cart price -->
     </div>
       </div>
@@ -389,6 +389,10 @@
   </body>
 </html>
 <script>
+  window.addEventListener('load',function(){
+    let pay=localStorage.getItem('pay');
+    document.querySelector('#amount').innerHTML=`Amount to pay &#8377;${pay}`;
+  })
     function cardpage(){
         document.querySelector('#cardspop').style.display="block";
     }
@@ -409,8 +413,24 @@
         document.querySelector('#afterservice').style.display="none";
     }
     function cntnu(){
-        //cart empty code
-        //create new booking localstorage key
-        //redirect to booking page
+      let booked=JSON.parse(localStorage.getItem('Booked'))||[];
+      let obj={};
+      obj[date]=localStorage.getItem('date');
+      obj[time]=localStorage.getItem('timeslot');
+      obj[prods]=localStorage.getItem('womenSlonArr');
+      obj[pay]=localStorage.getItem('pay');
+      obj[address]=localStorage.getItem('address');
+
+      localStorage.removeItem('date');
+      localStorage.removeItem('timeslot');
+      localStorage.removeItem('womenSlonArr');
+      localStorage.removeItem('pay');
+      localStorage.removeItem('address');
+      booked.push(obj);
+      localStorage.setItem('booked',JSON.stringify(booked));
+
+
+      window.location.href="../booking page/booking.html";
     }
+
 </script>

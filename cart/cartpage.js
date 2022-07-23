@@ -13,10 +13,12 @@ console.log(cartTotal)
 
 
 
-
+    cartTotal=cartTotal+299-150;
     document.getElementById("provalue").innerText = cartTotal;
 //window.location.reload();
 //console.log(products)
+
+
 
 
  function append(elem){
@@ -118,7 +120,6 @@ var value = document.getElementById("savingscost").innerText="₹"+Number(144*12
 
 
 //console.log(btn)
-
 
 
 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="summarypage.css">
+    </head>
+    <body>
+        <div id="data-sum">
+        <div id="hd-bar"><button onclick="cartpage()"><-</button> Summary</div>
+        <div id="line"></div>
+        <div id="content-cart">
+
+            <div>   
+                <div>
+                    
+                    your are saving &#8377;150 on this order.
+                </div>
+                <div id="line"></div>
+                
+                <div id="prod-list">
+                    <!-- products list -->
+                </div>
+                
+                <div>
+                    <button>
+                        Edit Package
+                    </button>
+                </div>
+
+                <div id="line5"></div>
+            </div>
+
+            <div id="invoice-fixed">
+                <div><h3>Payment Summary</h3>
+                    <div class="inf spbt">
+                        <div>item total</div>
+                        <div id="total">
+                        </div>
+                    </div>
+                    <div class="inf spbt">
+                        <div>item discount</div>
+                        <div >
+                            
+                            &#8377;150
+                        </div>
+                    </div>
+                    <div class="inf spbt">
+                        <div>Convenience fee</div>
+                        <div>
+                            &#8377;49
+                        </div>
+                    </div>
+                    <div id="line"></div>
+                    <div class="inf spbt">
+                        <div>
+                            Total
+                        </div>
+                        <div id="final-total">
+                            
+                        </div>
+                    </div>
+
+                    <div style="margin-top:10px;text-align:center;margin-bottom:10px;">
+                        <p>Yay! You have saved &#8377;150 on final bill</p>
+                    </div>
+                </div>
+                <div id="line5"></div>
+                <div class="inf spbt" style="margin-bottom: 10px;">
+                    <div>Coupons and offers</div><div>5 offers &nbsp;&nbsp;></div>
+                </div>
+                <div id="line5"></div>
+                <div>
+                    <h3>add a tip to thank the Professional</h3>
+                    <div class="inf" id="pricess">
+                        <div>&#8377;30</div>
+                        <div>&#8377;50</div>
+                        <div>&#8377;100</div>
+                        <div>Custom</div>
+                    </div>
+                    <p>100% of the tip goes to the professional.</p>
+                </div>
+                <div id="bottom-add-btn">
+                    <div id="line"></div>
+                    <button onclick="showAdd()">Add address and slot</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+        <div id="address">
+            <div id="close" onclick="closeAdd()">
+                X
+            </div>
+    
+        <div id="address-box">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+            <iframe
+                width="500"
+                height="600"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=navalakha&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+            ></iframe>
+            </div>
+        </div>
+    
+        <div id="form-box">
+            <div id="top-ad-form">
+                <div>
+                    <h3>Navlakha</h3>
+                <p>Navlakha,401 street,bulding no 404,classic apartment,indore,M.P. 452001,India</p>
+                </div>
+                <div>
+                    <button>
+                        Change
+                    </button>
+                </div>
+            </div>
+            <div id="line"></div>
+            <div id="form-ad">
+            <input type="text" id='house' placeholder="House/Flate Number *" required/>
+            <input type="text" id='landmark' placeholder="Landmark(Optional)"/>
+            </div>
+            <div id="save">
+            <p>Save as</p>
+            <button id="home-btn">Home</button><button id="other-btn">Other</button>
+            </div>
+            <div id="other-inp">
+                <input type="text" placeholder="eg. John's House,Office,garden and etc." id="other-add">
+            </div>
+        
+        </div>
+        <div id="complete-grid"></div>
+        <div id="bottom-add-slot">
+            <button onclick="openTslot()">Save and proceed to slots</button>
+        </div>
+        </div>
+        </div>
+    
+    
+    
+    
+        <div id="time-slot">
+            <div id="closeT" onclick="closeTslot()">
+                X
+            </div>
+    
+        <div id="time-slot-box">
+        <div id="slot-choose">
+            <div id="top-time-add">
+            </div>
+            <div id="line"></div>
+            <div class="high">
+                <h3>Select date of service</h3>
+                <p style="width:48%;background-color: grey; padding: 2px 10px;color:white;border-radius: 5px;">Your service will take approx. 1 hr 5mins</p>
+            </div>
+            <div id="dates">
+                <div class="one">
+                    <p>Sat</p>
+                    <h3>23</h3>
+                </div>
+                <div class="two">
+                    <p>Sun</p>
+                    <h3>24</h3>
+                </div>
+                <div class="three">
+                    <p>Mon</p>
+                    <h3>25</h3>
+                </div>
+            </div>
+            <div class="high" style="width:90%;background-color: grey; padding: 2px 10px;color:white;border-radius: 5px;">Free Cancellation till 2hrs before the booked slot, post that &#8377;50 chargeable</div>
+            <div class="high"><h3>Time to start the service</h3></div>
+            <div id="timess">
+                <div onclick="addTimeslot(1)">07:00 AM</div>
+                <div onclick="addTimeslot(2)">07:30 AM</div>
+                <div onclick="addTimeslot(3)">08:00 AM</div>
+                <div onclick="addTimeslot(4)">08:30 AM</div>
+                <div onclick="addTimeslot(5)">09:00 AM</div>
+                <div onclick="addTimeslot(6)">09:30 AM</div>
+                <div onclick="addTimeslot(7)">10:00 AM</div>
+                <div onclick="addTimeslot(8)">10:30 AM</div>
+                <div onclick="addTimeslot(9)">11:00 AM</div>
+                <div onclick="addTimeslot(10)">11:30 AM</div>
+                <div onclick="addTimeslot(11)">12:00 PM</div>
+                <div onclick="addTimeslot(12)">12:30 PM</div>
+                <div onclick="addTimeslot(13)">01:00 PM</div>
+                <div onclick="addTimeslot(14)">01:30 PM</div>
+                <div onclick="addTimeslot(15)">02:00 PM</div>
+                <div onclick="addTimeslot(16)">02:30 PM</div>
+                <div onclick="addTimeslot(17)">03:00 PM</div>
+                <div onclick="addTimeslot(18)">03:30 PM</div>
+                <div onclick="addTimeslot(19)">04:00 PM</div>
+                <div onclick="addTimeslot(20)">04:30 PM</div>
+                <div onclick="addTimeslot(21)">05:00 PM</div>
+                <div onclick="addTimeslot(22)">05:30 PM</div>
+                <div onclick="addTimeslot(23)">06:00 PM</div>
+                <div onclick="addTimeslot(24)">06:30 PM</div>
+            </div>
+        </div>
+        <div id="bottom-time-slot">
+            <button onclick="proceedtocheckout()">proceed to checkout</button>
+        </div>
+        </div>
+        </div>
+
+        
+    </body>
+</html>
+<script src="./summarypage.js"></script>

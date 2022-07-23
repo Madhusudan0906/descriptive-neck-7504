@@ -75,13 +75,13 @@
                     <div><h3>₹150 Plus discount applied</h3></div>
                     <div id="proceed">
                         <p><ins id="provalue">0</ins><del id="strikevalue"></del></p>
-                        <button id="proceedbtn">proceed <img  class= "frontarrow" src="./arrows/arrow_forward_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+                        <button id="proceedbtn" onclick="sumary()">proceed <img  class= "frontarrow" src="./arrows/arrow_forward_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
                     </div>
                 </div>
                
             </div>
             <div id="membership">
-                <a href="">No, I dont want membership</a>  <img class= "frontarrow"src="./arrows/arrow_forward_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
+                <a onclick="sumary()" style="cursor:pointer;">No, I dont want membership</a>  <img class= "frontarrow"src="./arrows/arrow_forward_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
             </div>
             </div>
            
@@ -205,6 +205,12 @@
   </div>
 </body>
 </html>
+<script>
+    function sumary(){
+window.location.href='summarypage.html'
+
+}
+</script>
 <script src="./cartpage.js" type="module">
 
 
