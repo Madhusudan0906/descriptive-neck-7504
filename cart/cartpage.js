@@ -59,36 +59,37 @@ var value = document.getElementById("savingscost").innerText="₹"+Number(144*12
 }
 
 
-// function addimage(){
-//     let image = document.getElementById("image").value;
-//     let imagearr = JSON.parse(localStorage.getItem("images")) || [];
-//     imagearr.push(image);
-//     localStorage.setItem("images", JSON.stringify(imagearr));
-//     image.value= null;
-//    }
-//    let id;
-//    let i = 0;
+function addimage(){
+    let image = document.getElementsByClassName("content").innerText;
+    //let imagearr = JSON.parse(localStorage.getItem("images")) || [];
+    console.log(image)
+    imagearr.push(image);
+    localStorage.setItem("images", JSON.stringify(imagearr));
+    image.value= null;
+   }
+   let id;
+   let i = 0;
 
-//    function slideshow(){
-//     let imagearr = JSON.parse(localStorage.getItem("images")) || [];
-//     let container = document.getElementById("slideimages")
+   function slideshow(){
+    let imagearr = JSON.parse(localStorage.getItem("images")) || [];
+    let container = document.getElementById("slideimages")
 
-//     id = setInterval(function(){
-//         console.log(i)
-//         if(i == imagearr.length){
-//             i=0;
-//         }
-//         let image = document.createElement("img")
-//         image.src= imagearr[i];
-//         container.innerHTML = null;
-//         container.append(image);
-//         i++;
-//     },1000)
-// }
-// function pause(){
-//         clearInterval(id)
-//     }
-
+    id = setInterval(function(){
+        console.log(i)
+        if(i == imagearr.length){
+            i=0;
+        }
+        let image = document.createElement("img")
+        image.src= imagearr[i];
+        container.innerHTML = null;
+        container.append(image);
+        i++;
+    },1000)
+}
+function pause(){
+        clearInterval(id)
+    }
+addimage()
 
 //console.log(btn)
 
