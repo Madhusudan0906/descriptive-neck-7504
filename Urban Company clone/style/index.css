@@ -37,7 +37,7 @@
     padding: 20px;
     font-family: sans-serif;
     color:white;
-    font-weight:600;
+    font-weight:500;
     gap: 10px;
 }
 
@@ -393,7 +393,7 @@ margin-top: 30px;
     color: grey;
   }
   .row1 > li > a:hover {
-    color: white;
+    color:red;
   }
   #footer_row2 {
     width: 80%;
@@ -452,9 +452,12 @@ margin-top: 30px;
 
   a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     /* padding-left: 30px; */
   }
+  /* a:hover{
+    color: red;
+  } */
 
   #footer p{
     text-align: left;
